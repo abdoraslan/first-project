@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --font-family: sans-serif;
+    --main-color: #10CAB7;
+    --font-size: 40px;
+    --font-weight: bold;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1.666;  
+}
+
+i {
+    color: var(--main-color);
+    font-size: var(--font-size);
+    margin: .5em 0;
+}
+
+
+p {
+    font-family: var(--font-family);
+    line-height: 1.66;
+}
+
+
+
+.head {
+    padding: 1.2em 2em;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu span {
+    display: block;
+    background-color: #333333;
+    width: 2em;
+    height: 2px;
+    margin: 0.33em 0;
+}
+
+.mountain-image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/wp10945193.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+}
+
+.description p:first-child {
+    color: var(--main-color);
+    font-size: 3em;
+    font-weight: var(--font-weight);
+    margin-bottom: .4em;
+}
+
+.description p:last-child {
+    font-size: 1.2em;
+    word-spacing: .3em;
+    line-height: 1.6em;
+    color: white;
+
+}
+
+.details {
+    width: auto;
+    height: auto;
+    padding: 2em;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.details p:first-of-type {
+    font-weight: var(--font-weight);
+    margin: .8em 0;
+
+}
+
+.details p:last-of-type {
+    color: grey;
+    margin: .2em 0;   
+}
+
+.idea,
+.work,
+.world {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+
+}
+
+.title1 p:first-child,
+.title2 p:first-child,
+.title3 p:first-child,
+.title4 p:first-child {
+    padding-top: .4em;
+    text-align: center;
+    font-size: 6em;
+    color: #EBECED;
+    font-weight: var(--font-weight);
+
+}
+
+.title1 p:last-child,
+.title2 p:last-child,
+.title3 p:last-child,
+.title4 p:last-child {
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    bottom: 2.8em;
+    color: gray;
+}
+
+.services {
+    padding: 3em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.service1-2,
+.service3-4 {
+    width: 30vw;
+    display: flexbox;
+    flex-direction: column;
+
+}
+
+.service1-2 i+p,
+.service3-4 i+p {
+    position: relative;
+    bottom: .5em;
+    display: inline;
+    font-weight: var(--font-weight);
+    margin-left: 1.2em;
+    font-size: 1.2em;
+
+}
+
+.service1-2 p:last-of-type,
+.service3-4 p:last-of-type {
+    margin-left: 4em;
+    color: gray;
+}
+
+.service-image {
+    width: 30vw;
+    position: relative;
+
+}
+
+.service-image img {
+    width: 16em;
+    height: 20em;
+    display: inline-block;
+    position: absolute;
+    right: 3em;
+    bottom: 2.5em;
+
+}
+
+.service-image div {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+    z-index: -1;
+    width: 6em;
+    height: 27em;
+    background-color: #2C4755;
+}
+
+.title2,
+.title4 {
+    background-color: #F6F6F6;
+
+}
+
+.portfolio {
+    background-color: #F6F6F6;
+    height: auto;
+    display: flex;
+    padding: 0 4em 4em 4em;
+    column-gap: 2em;
+}
+
+.portfolio div {
+    width: 35%;
+    background-color: white;
+}
+
+.portfolio h3 {
+    font-family: var(--font-family);
+    margin: 1em;
+}
+
+.portfolio p {
+    margin: 1em;
+    color: gray;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 6em;
+    justify-content: space-around;
+}
+
+.about-image {
+    width: 15em;
+    height: 25em;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../images/about.jpg");
+
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -2.5em;
+    left: -1.5em;
+    width: 6.5em;
+    height: 30em;
+    background-color: #EBECED;
+}
+
+.about-image::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -2.5em;
+    right: -1.5em;
+    width: 5em;
+    height: 25em;
+    background-color: #10CAB7;
+}
+
+.about-image span {
+    position: absolute;
+    width: 8em;
+    height: 5em;
+    background-color: #10CAB7;
+    bottom: 2.5em;
+    right: -8em;
+    z-index: -1;
+
+}
+
+.about-info {
+    width: 50%;
+
+
+}
+
+.about-info p:first-child {
+    font-weight: var(--font-weight);
+    margin: 2em;
+}
+
+.about-info p:last-child {
+    color: gray;
+    margin: 2em;
+}
+
+.about-info hr {
+    margin: 4em 19em 0 2em;
+    height: .05em;
+    background-color: #10CAB7;
+}
+
+.contact {
+    background-color: #F6F6F6;
+    padding: 2em 0 4em 0;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 2.2em;
+    letter-spacing: -3px;
+    font-weight: var(--font-weight);
+    color: #2C4755;
+}
+
+.contact a {
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    color: var(--main-color);
+}
+
+.contact span {
+    font-family: var(--font-family);
+}
+
+.contact i {
+    color: #2C4755;
+    font-size: 1em;
+
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C4755;
+    height: 5em;
+    font-size: 1.1em;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+}
+.right span {
+    color: var(--main-color);
+    margin: .3em;
+}
+
+/* Extra Small Devices (320px to 479px) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .details {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .service-image {
+        display: none;
+    }
+
+    .service1-2,
+    .service3-4 {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .service1-2 i+p,
+    .service3-4 i+p {
+        display: block;
+        margin-left: 0;
+
+
+    }
+
+    .service1-2 p:last-of-type,
+    .service3-4 p:last-of-type {
+        margin-left: 0;
+
+    }
+
+    .title1 p:first-child,
+    .title2 p:first-child,
+    .title3 p:first-child,
+    .title4 p:first-child {
+        font-size: 4.5em;
+    }
+
+    .title1 p:last-child,
+    .title2 p:last-child,
+    .title3 p:last-child,
+    .title4 p:last-child {
+        bottom: 2.3em;
+    }
+
+    .g-design,
+    .w-design,
+    .ui,
+    .development {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em;
+    }
+
+    .services {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .w-design {
+        margin-top: 0 !important
+    }
+
+    .portfolio {
+        flex-wrap: wrap;
+        row-gap: 2em;
+
+    }
+
+    .portfolio div {
+        width: 100%;
+
+
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-image::after,
+    .about-image::before,
+    .about-image span {
+        display: none;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .about-info p {
+        text-align: center;
+    }
+
+    .about-info hr {
+        margin: 4em 20% 0 20%;
+    }
+
+    .about-image {
+        margin-bottom: 2em;
+    }
+
+    .contact p {
+        font-size: 1.8em;
+    }
+
+    .contact a {
+        font-size: 1.6em;
+    }
+
+
+}
+
+/* Small Devices (480px to 767px) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .details {
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+
+    .service-image {
+        display: none;
+    }
+
+    .service1-2,
+    .service3-4 {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .service1-2 i+p,
+    .service3-4 i+p {
+        display: block;
+        margin-left: 0;
+
+
+    }
+
+    .service1-2 p:last-of-type,
+    .service3-4 p:last-of-type {
+        margin-left: 0;
+
+    }
+
+    .g-design,
+    .w-design,
+    .ui,
+    .development {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em;
+
+    }
+
+    .w-design {
+        margin-top: 0 !important
+    }
+
+    .services {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .portfolio {
+        flex-wrap: wrap;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+    .portfolio div {
+        flex-grow: 1;
+
+    }
+
+    .portfolio div:last-of-type {
+        flex-grow: 0;
+        width: calc(50% - 1em);
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-image::after,
+    .about-image::before,
+    .about-image span {
+        display: none;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .about-info p {
+        text-align: center;
+    }
+
+    .about-info hr {
+        margin: 4em 20% 0 20%;
+    }
+
+    .about-image {
+        margin-bottom: 2em;
+    }
+
+}
+
+
+/* Medium Devices (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .service-image {
+        display: none;
+    }
+
+    .service1-2,
+    .service3-4 {
+        width: 50vw;
+
+    }
+
+    .portfolio {
+        flex-wrap: wrap;
+        row-gap: 2em;
+    }
+
+    .portfolio div {
+        flex-grow: 1;
+
+    }
+
+    .portfolio div:last-of-type {
+        flex-grow: 0;
+        width: calc(50% - 1em);
+    }
+
+    .about {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .about span {
+        width: 4em;
+        right: -5em;
+    }
+
+    .about-info p:first-child {
+        margin-top: 0;
+    }
+
+}
+
+/* Large Devices (1024px to 1199px) */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .service-image {
+        display: none;
+    }
+
+    .service1-2,
+    .service3-4 {
+        width: 50vw;
+
+    }
+
+
+}
+
+/* Extra Large Devices (1200px to 1439px) */
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {}
+
+/* Ultra Large Devices (1440px and up) */
+@media only screen and (min-width: 1440px) {}
